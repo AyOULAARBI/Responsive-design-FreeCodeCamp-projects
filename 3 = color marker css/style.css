@@ -1,0 +1,40 @@
+.container{
+    /* background: rgba(0,0,0,0.1); */
+}
+
+.marker{
+    width:320px;
+    height:50px;
+    margin: 12px auto;
+}
+
+.orange{
+    background: linear-gradient(rgb(88, 58, 2),orange,rgb(158, 117, 41));
+    box-shadow:  0 0 20px rgba(255, 98, 0, 0.4);
+}
+.red{
+    background: linear-gradient(rgba(100,70,0),rgba(225,21,0),rgba(100,50,70));
+    box-shadow:  0 0 20px rgba(225,0,0,0.4);
+}
+.green{
+    background: linear-gradient(rgba(60,80,0),rgba(21,255,0),rgba(50,100,70));
+    box-shadow:  0 0 20px rgba(0,255,0,0.4);
+}
+.blue{
+    background: linear-gradient(rgba(60,0,80),rgba(0,21,255),rgba(50,70,100));
+    box-shadow:  0 0 20px rgba(0,0,255,0.4);
+}
+
+.cap, .sleeve{
+    display: inline-block;
+}
+.cap{
+    width: 90px;
+    height:50px;
+    border-right: 9px double rgb(50, 50, 50);
+}
+.sleeve{
+    width: 189px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.7);
+}

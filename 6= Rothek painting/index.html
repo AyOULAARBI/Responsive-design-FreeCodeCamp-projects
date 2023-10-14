@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frame{
+            border: 50px solid black;
+            width: 500px;
+            margin:auto;
+            padding: 40px;
+            /* height: 400px; */
+        }
+        .canvas{
+            background-color: aqua;
+            width: 500px;
+            height: 550px;
+            margin: 20px auto;
+            overflow: hidden;
+            filter: blur(2px);
+        }
+        .one{
+            background-color: coral;
+            margin: 20px auto;
+            width: 420px;
+            height: 100px;
+        }
+        .two{
+            background-color: brown;
+            margin: 20px auto;
+            width: 460px;
+            height: 200px;
+        }
+        .three{
+            background-color: grey;
+            margin: auto;
+            width: 420px;
+            height: 28%;
+            filter:blur(2px);
+        }
+        .one, .two{
+            filter:blur(1px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="canvas">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </div>
+</body>
+</html>

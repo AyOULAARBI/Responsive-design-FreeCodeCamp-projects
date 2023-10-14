@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form action="/somewhere" id="survey-form">
+        <div id="personal-info">
+          <label for="name" id="name-label">
+            Name: <input id="name" name="name" placeholder="Enter your name"/>
+          </label>
+          <label for="email" id="email-label">
+            Email: <input id="email" name="email" type="email" placeholder="Enter your email"/>
+          </label>
+          <label for="number" id="number-label">
+            Age: <input id="number" type="number" name="age" placeholder="Enter your age" min=2 max=100 />
+          </label>
+          <label for="dropdown" id="select-label">
+            what's your social situation ?:
+            <select id="dropdown" name="dropdown"> 
+              <option value="">(select your option)</option>
+              <option value="1">Single</option>
+              <option value="2">Married</option>
+              <option value="3">in a relationship</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>what is your favorite pet ?</legend>
+            <label for="dog" id="dog-label">
+              <input id="dog" name="pet" value="dog" type="radio" /> Dog
+            </label>
+            <label for="cat" id="cat-label">
+              <input id="cat" name="pet" value="cat" type="radio" /> Cat
+            </label>
+            <label for="others" id="others-label">
+              <input id="others" name="pet" value="others" type="radio" /> Others
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>what is your field of interest ?</legend>
+            <label for="Art" id="Art-label">
+              <input id="Art" name="Art" value="Art" type="checkbox" /> Art
+            </label>
+            <label for="nature" id="nature-label">
+              <input id="nature" name="nature" value="nature" type="checkbox" /> nature
+            </label>
+            <label for="IT" id="IT-label">
+              <input id="IT" name="IT" value="IT" type="checkbox" /> IT
+            </label>
+            <label for="other-fields" id="others-label">
+              <input id="other-fields" name="other" value="others" type="checkbox" /> Others
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Tell us a little bit about youself :</legend>
+            <label for="bio" id="bio-label">
+              <textarea  id="bio" name="bio" placeholder="hello I am ayoub">
+              </textarea>
+            </label>
+          </fieldset>
+          <div class="submit">
+          <button type="submit" id="submit">Submit</button>
+            </div>
+      </form>
+    </div>
+  </body>
+</html>
