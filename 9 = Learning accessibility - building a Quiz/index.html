@@ -13,14 +13,66 @@
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-                <li><a href="">INFO</a></li>
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a></li>
+                <li><a href="#info-section">INFO</a></li>
+                <li><a href="#css-sectionhtml-section">HTML</a></li>
+                <li><a href="#">CSS</a></li>
             </ul>
         </nav>
     </header>
     <main>
-      
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="info-section">
+                <h2 id="info-section">INFO</h2>
+                <div class="info"><label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                </div>
+                <div class="info"><label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                </div>
+                <div class="info"><label for="dob">D.O.B. <span class="sr-only">(Date of birth)</span></label>
+                <input type="date" id="dob" name="dob">
+                </div>
+            </section>
+
+            <section role="region" aria-labelledby="html-section">
+                <h2 id="html-section">HTML</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="question1">
+                        <legend>HTML is short for Hyper transcript Markup language?</legend>
+                        <ul class="answer">
+                            <li><label for="q1-a1"><input type="radio" name="q1" id="q1-a1" value="True">True</label></li>
+                            <li><label for="q1-a2"><input type="radio" name="q1" id="q1-a2" value="False">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="question2">
+                        <legend>In HTML forms we use the action attribute to specify the method used in the form ?</legend>
+                        <ul class="answer">
+                            <li><label for="q2-a1"><input type="radio" name="q2" id="q2-a1" value="True">True</label></li>
+                            <li><label for="q2-a2"><input type="radio" name="q2" id="q2-a2" value="False">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+
+            <section role="region" aria-labelledby="css-section">
+                <h2 id="css-section">CSS</h2>
+                <div class="formrow">
+                    <div class="question-block"></div>
+                    <div class="answer"></div>
+                </div>
+                <div class="formrow">
+                    <div class="question-block"></div>
+                    <div class="answer"></div>
+                </div>
+            </section>
+        </form>
+         <!-- css section  contains drop down and textarea
+            .formrow > alterning .question-block and .answer
+         -->
     </main>
 </body>
 </html>
