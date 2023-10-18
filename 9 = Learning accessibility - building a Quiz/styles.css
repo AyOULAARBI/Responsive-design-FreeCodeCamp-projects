@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
     background: #f5f6f7;
     color: #1b1b32;
@@ -11,6 +14,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:fixed;
+    top: 0;
 }
 
 #logo{
@@ -23,6 +28,7 @@ header{
 h1{
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
 }
 nav{
     width: 50%;
@@ -32,8 +38,26 @@ nav{
 nav>ul{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-block: 0;
+    padding-inline-start: 0;
+    height: 100%;
+}
+nav li{
+    color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+li > a{
+    color:white;
+    text-decoration: none;
 }
 
+main{
+    padding-top: 2em;
+}
 h2{
     border-bottom: 4px solid #dfdfe2;
     font-family: 'Courier New', Verdana, sans-serif;
@@ -50,4 +74,78 @@ h2{
 }
 p::before{
     content: "Question #";
+}
+section{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.info{
+    padding: 10px 0 0 10px;
+}
+.formrow{
+    margin: 0;
+    margin-top: 12px;
+    padding: 0 9px 0 9px;
+}
+  input{
+    font-size: 19px;
+}
+.info input, .info label{
+    display: inline-block;
+}
+.info input{
+    width: 50%;
+    text-align: left;
+}
+.info label{
+    width: 10%;
+    min-width: 55px;;
+    text-align: right;;
+}
+.question-block {
+    /* display: block; */
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 6px;
+}
+p{
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.question{
+    border: 0;
+    padding-bottom: 0;
+}
+.answers-list{
+    list-style: none;
+    padding: 0;
+}
+button{
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a40;
+}
+footer, footer a{
+    color:  white;
+}
+address{
+    text-align: center;
+    padding: 9px;
+}
+@media (prefers-reduced-motion: no-preference){
+    * {
+        scroll-behavior: smooth;
+    }
 }
