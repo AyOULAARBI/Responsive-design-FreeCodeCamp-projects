@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #232323;
+    color: #e7e8f2;
+    display: flex;
+}
+#navbar{
+    position: sticky;
+    width: 25vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #12141C;
+    /* display: flex; */
+}
+#main-doc{
+    width: 75vw;
+}
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color: rgb(181 181 189);
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid #e7e8f2;
+    border-left: none;
+    border-right: none;
+    padding: 9px;
+}
+#navbar header{
+    font-size: 35px;
+    text-align: center;
+    padding: 13px;
+}
+.main-section{
+    border: 2px solid red;
+    height: 400px;
+}
