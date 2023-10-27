@@ -53,32 +53,121 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>Laravel</header>
-        <a href="#meet_laravel" class="nav-link">Meet Laravel</a>
-        <a href="#why_laravel" class="nav-link">Why Laravel</a>
-        <a href="#fst_prjct" class="nav-link">First Laravel Project</a>
-        <a href="#getting_started" class="nav-link">Getting started on Windows OS</a>
-        <a href="#config" class="nav-link">Initial Configurations</a>
-        <a href="#next_step" class="nav-link">Next Steps</a>
+        <header>
+            <h1>Laravel</h1>
+        </header>
+        <section class="links">
+            <a href="#meet_laravel" class="nav-link">Meet Laravel</a>
+            <a href="#why_laravel" class="nav-link">Why Laravel</a>
+            <a href="#fst_prjct" class="nav-link">First Laravel Project</a>
+            <a href="#getting_started" class="nav-link">Getting started on Windows OS</a>
+            <a href="#config" class="nav-link">Initial Configurations</a>
+            <a href="#next_step" class="nav-link">Next Steps</a>
+        </section>
     </nav>
     <div id="main-doc">
-        <section class="main-section">
-            <h2 id="meet_laravel">Meet Laravel</h2>
+        <section class="main-section" id="meet_laravel">
+            <header >Meet Laravel</header>
+            <p>Laravel is a web application framework with expressive, elegant syntax. A web framework provides a structure and starting point 
+                for creating your application,allowing you to focus on creating something amazing while we sweat the details.
+            </p>
+
+            <p>Laravel strives to provide an amazing developer experience while providing powerful features such as thorough dependency injection,
+                 an expressive database abstraction layer, queues and scheduled jobs, unit and integration testing, and more.
+            </p>
+            <p>
+                Whether you are new to PHP web frameworks or have years of experience, Laravel is a framework that can grow with you. We'll help you take your
+                 first steps as a web developer or give you a boost as you take your expertise to the next level. We can't wait to see what you build.
+            </p>
+            
         </section>
-        <section class="main-section">
-            <h2 id="why_laravel">Why Laravel ?</h2>
+        <section class="main-section" id="why_laravel">
+            <header >Why Laravel ?</header>
+            <p>
+                There are a variety of tools and frameworks available to you when building a web application. However, we believe Laravel is the
+                best choice for building modern, full-stack web applications.
+            </p>
+            <p class="bold">A Progressive framework</p>
+            <p>We like to call Laravel a "progressive" framework. By that, we mean that Laravel grows with you. If you're just taking your first steps
+                into web development, Laravel's vast library of documentation, 
+                guides, and video tutorials will help you learn the ropes without becoming overwhelmed.</p>
+            <p>If you're a senior developer, Laravel gives you robust tools for dependency injection, unit testing, queues, real-time events, and more. 
+                Laravel is fine-tuned for building professional web applications and ready to handle enterprise work loads.</p>
+            <p class="bold">A Scalable Framework</p>
+            <p>
+                Laravel is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Laravel's built-in support for fast, distributed cache 
+                systems like Redis, horizontal scaling with Laravel is a breeze. In fact, Laravel applications have been easily scaled to handle hundreds
+                 of millions of requests per month.
+            </p>
+            <p>
+                Need extreme scaling? Platforms like Laravel Vapor allow you to run your Laravel application at nearly limitless
+                 scale on AWS's latest serverless technology.
+            </p>
+            <p class="bold">A Community Framework</p>
+            <p>Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition,
+                thousands of talented developers from around the world have contributed to the framework. Who knows, maybe you'll even 
+                become a Laravel contributor.</p>
+
         </section>
-        <section class="main-section">
-            <h2 id="fst_prjct">First Laravel Project</h2>
+        <section class="main-section" id="fst_prjct">
+            <header >First Laravel Project</header>
+            <p>Before creating your first Laravel project, you should ensure that your local machine has PHP and Composer installed. If you are developing on macOS,
+                 PHP and Composer can be installed within minutes via Laravel Herd. In addition, we recommend installing Node and NPM.</p>
+            <p>After you have installed PHP and Composer, you may create a new Laravel project via the Composer <u>create-project</u> command:</p>
+            <code>
+                composer create-project laravel/laravel example-app
+            </code>
+            <p>Or, you may create new Laravel projects by globally installing the Laravel installer via Composer. Or, if you installed
+                 PHP and Composer via Laravel Herd, the Laravel installer is already available to you:</p>
+            <code>composer global require laravel/installer<br>
+ 
+                laravel new example-app</code>
+            <p>After the project has been created, start Laravel's local development server using the Laravel's Artisan CLI serve command:</p>
+            <code>
+                php artisan serve
+            </code>
+            <p>
+                Once you have started the Artisan development server, your application will be accessible in your web browser at <u>http://localhost:8000</u> .
+                 Next, you're ready to start taking your <a href="https://laravel.com/docs/10.x#next-steps">next steps</a> into the Laravel ecosystem. 
+                 Of course, you may also want to <a href="https://laravel.com/docs/10.x#databases-and-migrations">configure</a> a database.
+            </p>
         </section>
-        <section class="main-section">
-            <h2 id="getting_started">Getting started on Windows OS</h2>
+        <section class="main-section" id="getting_started">
+            <header >Getting started on Windows OS</header>
+            <p>Before we create a new Laravel application on your Windows machine, make sure to install Docker Desktop. Next, you should ensure that 
+                Windows Subsystem for Linux 2 (WSL2) is installed and enabled. WSL allows you to run Linux binary executables natively on Windows 10. 
+                Information on how to install and enable WSL2 can be found within Microsoft's developer environment documentation.</p>
+            <p>After installing and enabling WSL2, you should ensure that Docker Desktop is <a href="https://docs.docker.com/docker-for-windows/wsl/">configured to use the WSL2 backend</a>.</p>
+            <p>
+                Next, you are ready to create your first Laravel project. Launch Windows Terminal and begin a new terminal session for 
+                your WSL2 Linux operating system. Next, you can use a simple terminal command to create a new Laravel project.
+                 For example, to create a new Laravel application in a directory named "example-app", you may run the following command in your terminal:
+            </p>
+            <code>curl -s https://laravel.build/example-app | bash</code>
+            <p>
+                Of course, you can change "example-app" in this URL to anything you like - just make sure the application name only contains alpha-numeric 
+                characters, dashes, and underscores.
+                 The Laravel application's directory will be created within the directory you execute the command from.
+            </p>
+            <p>Sail installation may take several minutes while Sail's application containers are built on your local machine</p>
+            <p>After the project has been created, you can navigate to the application directory and start Laravel Sail. Laravel
+                Sail provides a simple command-line interface for interacting with Laravel's default Docker configuration:</p>
+            <code>./vendor/bin/sail up</code>
+            <p>Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.</p>
+            <p>To continue learning more about Laravel Sail, review its <a href="https://laravel.com/docs/10.x/sail">complete documentation</a> .</p>
         </section>
-        <section class="main-section">
-            <h2 id="config">Initial Configurations</h2>
+        <section class="main-section" id="config">
+            <header >Initial Configurations</header>
+            <p>All of the configuration files for the Laravel framework are stored in the <b>config</b> directory. Each option is documented, so feel free
+                 to look through the files and get familiar with the options available to you.</p>
+            <p>Laravel needs almost no additional configuration out of the box. You are free to get started developing! However, you may wish to review
+                 <b>the config/app.php</b> file and its documentation. 
+                 It contains several options such as <b>timezone</b> and <b>locale</b> that you may wish to change according to your application.</p>
+            <p class="bold">Environment Based Configuration</p>
+            
         </section>
-        <section class="main-section">
-            <h2 id="next_step">Next Steps</h2>
+        <section class="main-section" id="next_step">
+            <header >Next Steps</header>
         </section>
     </div>
 </body>
